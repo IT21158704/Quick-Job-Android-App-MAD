@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cut_card_background"
+        tools:context=".activities.Reviews.ReviewEditReview"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Edit Review"
+            android:textColor="@color/mainblue"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/review_name"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="5dp"
+        android:textSize="18sp"
+        android:hint="Customer Profile Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="112dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="66dp"
+        android:backgroundTint="@color/Red"
+        android:text="Cancel"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_comment"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="118dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/Green"
+        android:text="Submit"
+        android:textSize="@dimen/formTxt"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_comment"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/review_comment"
+        android:layout_width="361dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#F6F3F3"
+        android:drawableLeft="@android:drawable/stat_notify_chat"
+        android:drawablePadding="20dp"
+        android:drawableTint="#1C1B1B"
+        android:textSize="@dimen/formTxt"
+        android:hint="Write here"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/review_name" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/baseline_rate_review_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

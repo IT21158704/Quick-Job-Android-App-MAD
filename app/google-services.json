@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "44234464688",
+    "firebase_url": "https://quickjob-mad-default-rtdb.firebaseio.com",
+    "project_id": "quickjob-mad",
+    "storage_bucket": "quickjob-mad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44234464688:android:d8183e23eda94d1c270a75",
+        "android_client_info": {
+          "package_name": "com.example.jobportal2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44234464688-s1o4lji4croukq1uk55ok9ab552mbavb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtMM9zy7AsPQF-vXq_NgjbOXw_zqF7SAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44234464688-s1o4lji4croukq1uk55ok9ab552mbavb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quick Job</string>
+    <string name="Title_aj">Title : </string>
+    <string name="name_aj">Name : </string>
+    <string name="age_aj">Age : </string>
+    <string name="address_aj">Address : </string>
+    <string name="mobile_aj">Mobile : </string>
+    <string name="email_aj">Email : </string>
+    <string name="edt_btn_aj">Edit</string>
+    <string name="dlt_btn_aj">Delete</string>
+    <string name="aply_btn_sj">Apply</string>
+</resources>
