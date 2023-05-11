@@ -25,50 +25,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Title_aj"
-                android:textColor="@color/black"
-                android:textSize="@dimen/TexrLarge"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/jobtitle4"
-                android:layout_marginStart="8dp"
-                android:text=""
-                android:textColor="@color/black"
-                android:textSize="@dimen/TextSmall"/>
-
-
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="@string/name_aj"
                 android:textColor="@color/black"
                 android:textSize="@dimen/TexrLarge"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/jobfrmname"
+                android:id="@+id/Applierjobfrmname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Isuru Umanga"
+                android:text=""
                 android:layout_marginStart="8dp"
                 android:textColor="@color/black"
                 android:textSize="@dimen/TextSmall"/>
-
-
-
-
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,16 +56,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/jobfrmage"
+                android:id="@+id/Applierjobfrmage"
                 android:layout_marginStart="8dp"
-                android:text="23"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20dp"/>
-
-
-
-
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -111,16 +79,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/jobfrmaddress"
+                android:id="@+id/Applierjobfrmaddress"
                 android:layout_marginStart="8dp"
-                android:text="Padukka"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20dp"/>
-
-
-
-
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -137,16 +102,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/jobfrmmble"
+                android:id="@+id/Applierjobfrmmble"
                 android:layout_marginStart="8dp"
-                android:text="0700000000"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20dp"/>
-
-
-
-
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -163,31 +125,26 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/jobfrmemail"
+                android:id="@+id/jApplierobfrmemail"
                 android:layout_marginStart="8dp"
-                android:text="example@mail.com"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20dp"/>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical |center_horizontal"
-            android:orientation="horizontal"
-            android:layout_marginTop="7dp"
-            android:gravity="center">
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/apljbedt"
+            <TextView
+                android:id="@+id/Applierjobfrmid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:textColor="#FFE4E4E4"
-                android:backgroundTint="#2493ff"
-                android:text="Approve"
-                android:textSize="18dp" />
-
+                android:textColor="@color/black"
+                android:visibility="invisible"
+                android:textSize="@dimen/TextSmall"/>
         </LinearLayout>
 
     </LinearLayout>

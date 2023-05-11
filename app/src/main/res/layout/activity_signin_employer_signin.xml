@@ -98,7 +98,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="100dp"
         android:background="#638bf2"
-        android:text="Signin"
+        android:text="Login"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"

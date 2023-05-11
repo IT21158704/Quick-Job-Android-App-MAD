@@ -83,6 +83,14 @@
                     android:hint="Enter Description"
                     android:textSize="22dp"/>
 
+                <EditText
+                    android:id="@+id/applyJobid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="14"
+                    android:visibility="invisible"
+                    android:textSize="@dimen/formTxt" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -96,25 +104,12 @@
                         android:id="@+id/savebtnedtaplyjob"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
                         android:backgroundTint="@color/Green"
                         android:text="Save"
                         android:textColor="@color/white"
                         android:textSize="@dimen/buttonSize" />
 
-                    <Button
-                        android:id="@+id/dltbtnedtaplyjob"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="10dp"
-                        android:backgroundTint="@color/Red"
-                        android:text="Cancel"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/buttonSize" />
-
                 </LinearLayout>
-
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>

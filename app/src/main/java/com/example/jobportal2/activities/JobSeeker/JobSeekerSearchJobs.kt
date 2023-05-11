@@ -12,14 +12,5 @@ class JobSeekerSearchJobs : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search_jobs)
 
-        val jobAplyBtn = findViewById<Button>(R.id.jobAplyBtn)
-
-        jobAplyBtn.setOnClickListener {
-
-            val intent = Intent(this, JobSeekerApplyJobForm::class.java)
-            startActivity(intent)
-
-        }
-
     }
 }

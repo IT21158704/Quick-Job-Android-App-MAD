@@ -2,7 +2,6 @@ package com.example.jobportal2.activities.JobSeeker
 
 import android.annotation.SuppressLint
 import android.content.Intent
-//import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -43,7 +42,6 @@ class JobSeekerApplyJobForm : AppCompatActivity() {
             val intent = Intent(this, JobSeekerSearchJobs::class.java)
             finish()
             startActivity(intent)
-
         }
     }
     private fun saveSeekerData(){

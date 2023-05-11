@@ -26,19 +26,43 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Review 1 : "
+                android:id="@+id/reviewName"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/jobtitletv1"
+                android:text=" : "
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Review"
                 android:layout_marginStart="8dp"
-                android:text="Efficient and user-friendly job portal app that streamlines job search with personalized alerts and helpful resources."
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20dp"
                 android:padding="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/reviewID"
+                android:visibility="invisible"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold" />
         </LinearLayout>
 
 
@@ -47,7 +71,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical |center_horizontal"
             android:orientation="horizontal"
-            android:layout_marginTop="7dp"
             android:gravity="center">
 
             <Button

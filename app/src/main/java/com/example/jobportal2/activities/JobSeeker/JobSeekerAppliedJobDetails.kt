@@ -22,7 +22,6 @@ class JobSeekerAppliedJobDetails : AppCompatActivity() {
     private lateinit var btnUpdate: Button
     private lateinit var btnDelete: Button
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_applied_job_details)
@@ -164,4 +163,3 @@ class JobSeekerAppliedJobDetails : AppCompatActivity() {
     }
 
 }
-

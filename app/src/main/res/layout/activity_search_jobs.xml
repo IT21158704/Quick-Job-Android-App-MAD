@@ -33,9 +33,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/jobtitletv1"
+                android:id="@+id/searchjbtitle"
                 android:layout_marginStart="8dp"
-                android:text="Manager"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20dp"/>
         </LinearLayout>
@@ -57,9 +57,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/jobctgry"
+                android:id="@+id/searchjbctgry"
                 android:layout_marginStart="8dp"
-                android:text="Hotel"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20dp"/>
         </LinearLayout>
@@ -81,9 +81,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/jobslry"
+                android:id="@+id/searchjbslry"
                 android:layout_marginStart="8dp"
-                android:text="120000/-"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20dp"/>
         </LinearLayout>
@@ -101,34 +101,33 @@
                 android:text="Description : "
                 android:textColor="@color/black"
                 android:textSize="@dimen/TexrLarge"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <TextView
+                android:id="@+id/searchjbdscption"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/jobdscption"
                 android:layout_marginStart="8dp"
-                android:text="he he"
+                android:text=""
                 android:textColor="@color/black"
-                android:textSize="20dp"/>
+                android:textSize="20dp" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:orientation="horizontal"
-            android:gravity="center">
-
-            <Button
-                android:id="@+id/jobAplyBtn"
+            android:layout_marginTop="3sp"
+            android:orientation="horizontal">
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:backgroundTint="@color/Green"
-                android:gravity="center"
-                android:textColor="#E4E4E4"
-                android:text="@string/aply_btn_sj"
-                android:textSize="18dp" />
+                android:id="@+id/searchjbid"
+                android:layout_marginStart="8dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:visibility="invisible"
+                android:textSize="20dp"/>
         </LinearLayout>
 
     </LinearLayout>

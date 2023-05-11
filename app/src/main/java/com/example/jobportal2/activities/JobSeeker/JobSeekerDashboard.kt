@@ -7,7 +7,10 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.jobportal2.R
 import com.example.jobportal2.activities.Reviews.ReviewAllReviews
+import com.example.jobportal2.activities.Reviews.ReviewsFetching
 import com.example.jobportal2.activities.Signin.SigninJobSeekerSignin
+import com.example.jobportal2.activities.Signin.SigninUpdateProfile
+import com.example.jobportal2.activities.Signin.SigninViewProfile
 import com.example.jobportal2.databinding.ActivitySeekerDashboardBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -30,7 +33,7 @@ class JobSeekerDashboard : AppCompatActivity() {
 
         cardJobSearch.setOnClickListener {
 
-            val intent = Intent(this, JobSeekerSearchJobs::class.java)
+            val intent = Intent(this, JobSeekerSearchJobFetching::class.java)
             startActivity(intent)
 
         }
@@ -47,7 +50,8 @@ class JobSeekerDashboard : AppCompatActivity() {
 
         cardSeekerProfile.setOnClickListener {
 
-            Toast.makeText(this, "Seeker Profile Button clicked", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SigninViewProfile::class.java)
+            startActivity(intent)
 
         }
 
@@ -55,7 +59,7 @@ class JobSeekerDashboard : AppCompatActivity() {
 
         cardReview.setOnClickListener {
 
-            val intent = Intent(this, ReviewAllReviews::class.java)
+            val intent = Intent(this, ReviewsFetching::class.java)
             startActivity(intent)
 
         }

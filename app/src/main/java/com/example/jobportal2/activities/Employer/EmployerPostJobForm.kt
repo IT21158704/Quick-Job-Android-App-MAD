@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.example.jobportal2.R
 import com.example.jobportal2.activities.Reviews.ReviewAllReviews
+import com.example.jobportal2.models.Employer.EmployerModel
 import com.example.jobportal2.models.applyJobModel
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -36,7 +37,7 @@ class EmployerPostJobForm : AppCompatActivity() {
 
         jobpostaplybtn.setOnClickListener {
             saveEmployee()
-            val intent = Intent(this, EmployerViewPosedJobs::class.java)
+            val intent = Intent(this, EmployerAppliersFetching::class.java)
             finish()
             startActivity(intent)
         }
@@ -65,7 +66,7 @@ class EmployerPostJobForm : AppCompatActivity() {
 
         val EmployerID = dbRef.push().key!!
 
-        val applyReview = applyJobModel(EmployerID, Title, Category, Salary, Description)
+        val applyReview = EmployerModel(EmployerID, Title, Category, Salary, Description)
 
         dbRef.child(EmployerID).setValue(applyReview)
             .addOnCompleteListener{

@@ -11,7 +11,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JobPortal2"
         tools:targetApi="31">
-
+        <activity
+            android:name=".activities.Reviews.ReviewsFetching"
+            android:exported="false" />
+        <activity
+            android:name=".activities.JobSeeker.JobSeekerSearchJobFetching"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Employer.EmployerAppliersFetching"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Employer.EmployerPostedJobFetching"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Employer.EmployerAllJobs"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Signin.SigninViewProfile"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Signin.SigninUpdateProfile"
+            android:exported="false" />
+        <activity
+            android:name=".activities.Signin.SigninDeleteProfile"
+            android:exported="false" />
         <activity
             android:name=".activities.Signin.SigninJobSeekerSignup"
             android:exported="false" />

@@ -7,7 +7,9 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.jobportal2.R
 import com.example.jobportal2.activities.Reviews.ReviewAllReviews
+import com.example.jobportal2.activities.Reviews.ReviewsFetching
 import com.example.jobportal2.activities.Signin.SigninJobSeekerSignin
+import com.example.jobportal2.activities.Signin.SigninViewProfile
 import com.example.jobportal2.databinding.ActivityEmployerDashboardBinding
 import com.example.jobportal2.databinding.ActivitySeekerDashboardBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -39,7 +41,7 @@ class EmployerDashboard : AppCompatActivity() {
 
         cardPostedJobs.setOnClickListener {
 
-            val intent = Intent(this, EmployerViewPosedJobs::class.java)
+            val intent = Intent(this, EmployerPostedJobFetching::class.java)
             startActivity(intent)
         }
 
@@ -47,7 +49,7 @@ class EmployerDashboard : AppCompatActivity() {
 
         cardViewAppliers.setOnClickListener {
 
-            val intent = Intent(this, EmployerViewAppliers::class.java)
+            val intent = Intent(this, EmployerAppliersFetching::class.java)
             startActivity(intent)
         }
 
@@ -55,8 +57,17 @@ class EmployerDashboard : AppCompatActivity() {
 
         cardReview.setOnClickListener {
 
-            val intent = Intent(this, ReviewAllReviews::class.java)
+            val intent = Intent(this, ReviewsFetching::class.java)
             startActivity(intent)
+        }
+
+        val cardSeekerProfile = findViewById<androidx.cardview.widget.CardView>(R.id.cardEmpProfile)
+
+        cardSeekerProfile.setOnClickListener {
+
+            val intent = Intent(this, SigninViewProfile::class.java)
+            startActivity(intent)
+
         }
 
         binding.cardEmpLogout.setOnClickListener {
@@ -71,7 +82,5 @@ class EmployerDashboard : AppCompatActivity() {
             finish()
 
         }
-
-
     }
 }

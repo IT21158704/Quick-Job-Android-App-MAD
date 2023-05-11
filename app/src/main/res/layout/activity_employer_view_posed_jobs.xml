@@ -35,14 +35,11 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/jobtitletv2"
                 android:layout_marginStart="8dp"
-                android:text="Manager"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20dp"/>
-
-
-
-
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -61,14 +58,11 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/jobctgrypostjb"
                 android:layout_marginStart="8dp"
-                android:text="Hotel"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20dp"/>
-
-
-
-
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,16 +79,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/jobtitletv1"
+                android:id="@+id/jobslrypostjb"
                 android:layout_marginStart="8dp"
-                android:text="12000"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20dp"/>
-
-
-
-
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -113,14 +104,27 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/jobdescriptionjbpost"
                 android:layout_marginStart="8dp"
-                android:text="--Text--"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20dp"/>
-
-
-
-
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/aplyjbid"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/black"
+                android:visibility="invisible"
+                android:textSize="@dimen/TextSmall"/>
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
