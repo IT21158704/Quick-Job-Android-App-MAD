@@ -80,7 +80,7 @@ class SigninEmployerSignin : AppCompatActivity() {
             return false
         }
         if (binding.seekerPassSignup.length() <= 6 ){
-            binding.textInputLayoutSeekerPasswordSignup.error = "Password Should be at least 6 characters"
+            binding.textInputLayoutSeekerPasswordSignup.error = "Password Should be at least 7 characters"
             binding.textInputLayoutSeekerPasswordSignup.errorIconDrawable = null
             return false
         }

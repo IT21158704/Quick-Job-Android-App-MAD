@@ -9,99 +9,100 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="11dp">
 
-    <EditText
-        android:id="@+id/upnic"
-        android:layout_width="309dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="51dp"
-        android:ems="10"
-        android:hint="Enter User Name"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutupdatePass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        app:startIconDrawable="@drawable/ic_password"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="130dp"
+        app:passwordToggleEnabled="true"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutupdateEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/updatePass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutupdateEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        app:startIconDrawable="@drawable/ic_email"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="130dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/textView2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/updateEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 
-    <EditText
-        android:id="@+id/editTextNumberSigned"
-        android:layout_width="309dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="51dp"
-        android:ems="10"
-        android:hint="Enter Nic No"
-        android:inputType="numberSigned"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upnic" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword2"
-        android:layout_width="309dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="51dp"
-        android:ems="10"
-        android:hint="Enter Password"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/upphone" />
-
-    <EditText
-        android:id="@+id/uppw"
-        android:layout_width="309dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="51dp"
-        android:ems="10"
-        android:hint="Re Enter Password"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
-
-    <EditText
-        android:id="@+id/upphone"
-        android:layout_width="309dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="51dp"
-        android:ems="10"
-        android:hint="Enter Phone"
-        android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberSigned" />
+    <!--    <Button-->
+<!--        android:id="@+id/passSave"-->
+<!--        android:layout_width="180sp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginStart="141dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="140dp"-->
+<!--        android:background="@color/Green"-->
+<!--        android:text="Update Password"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/emailSave"-->
+<!--        tools:ignore="MissingConstraints" />-->
 
     <Button
-        android:id="@+id/viewU"
-        android:layout_width="155dp"
+        android:id="@+id/emailSave"
+        android:layout_width="110dp"
         android:layout_height="48dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="35dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="60dp"
         android:background="@color/Green"
         android:text="Save"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/uppw" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutupdatePass"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/deleteU"
-        android:layout_width="155dp"
+        android:id="@+id/cancel"
+        android:layout_width="110dp"
         android:layout_height="48dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="70dp"
         android:background="@color/Red"
         android:text="Cancel"
         android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/viewU"
-        app:layout_constraintTop_toBottomOf="@+id/uppw" />
+        app:layout_constraintStart_toEndOf="@+id/emailSave"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutupdatePass"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="94dp"
         android:layout_marginEnd="136dp"
         android:src="@drawable/baseline_edit_24"
         app:layout_constraintEnd_toEndOf="parent"
@@ -112,13 +113,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="172dp"
         android:text="Update Profile"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
